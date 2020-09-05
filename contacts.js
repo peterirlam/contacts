@@ -36,3 +36,16 @@ let myContacts = [
 		interests: [ 'Hunting', 'Financial markets', 'Wearable tech' ]
 	}
 ];
+
+function friendsLookUp(name, prop) {
+	for (let i = 0; i < myContacts.length; i++) {
+		if (name === myContacts[i].firstName) {
+			if (myContacts[i].hasOwnProperty(prop)) {
+        return myContacts[i][prop];
+			} else {
+        return "Try searching under a different property";
+      }
+		}
+  }
+  return "You have no friends :(";
+}
