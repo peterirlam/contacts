@@ -49,3 +49,6 @@ function friendsLookUp(name, prop) {
   }
   return "You have no friends :(";
 }
+
+let contact = friendsLookUp('Phil', 'interests');
+console.log(contact);
